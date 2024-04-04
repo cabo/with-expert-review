@@ -4,12 +4,12 @@
 
 General Area Dispatch                                         C. Bormann
 Internet-Draft                                    Universität Bremen TZI
-Updates: 7120, 8126 (if approved)                           4 April 2024
-Intended status: Best Current Practice                                  
-Expires: 6 October 2024
+Updates: 7120, 8126 (if approved)                              M. Tiloca
+Intended status: Best Current Practice                           RISE AB
+Expires: 6 October 2024                                     4 April 2024
 
 
-           Registry policies “…, with Expert Review Required”
+                Registry policies “… with Expert Review”
           draft-bormann-gendispatch-with-expert-review-latest
 
 Abstract
@@ -53,9 +53,9 @@ Status of This Memo
 
 
 
-Bormann                  Expires 6 October 2024                 [Page 1]
+Bormann & Tiloca         Expires 6 October 2024                 [Page 1]
 
-Internet-Draft  Registry policies “…, with Expert Review      April 2024
+Internet-Draft  Registry policies “… with Expert Review”      April 2024
 
 
    Internet-Drafts are draft documents valid for a maximum of six months
@@ -83,16 +83,16 @@ Table of Contents
 
    1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
    2.  Augmented Registration Policies . . . . . . . . . . . . . . .   3
-     2.1.  RFC Required, With Expert Review Required . . . . . . . .   3
-     2.2.  IETF Review, With Expert Review Required  . . . . . . . .   3
-     2.3.  Standards Action, With Expert Review Required . . . . . .   3
-     2.4.  IESG Approval, With Expert Review Required  . . . . . . .   4
+     2.1.  RFC Required With Expert Review . . . . . . . . . . . . .   3
+     2.2.  IETF Review With Expert Review  . . . . . . . . . . . . .   3
+     2.3.  Standards Action With Expert Review . . . . . . . . . . .   3
+     2.4.  IESG Approval With Expert Review  . . . . . . . . . . . .   4
    3.  Early Allocation for Augmented Registration Policies  . . . .   4
    4.  Security Considerations . . . . . . . . . . . . . . . . . . .   4
    5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   4
-   6.  Normative References  . . . . . . . . . . . . . . . . . . . .   5
+   6.  Normative References  . . . . . . . . . . . . . . . . . . . .   4
    Acknowledgments . . . . . . . . . . . . . . . . . . . . . . . . .   5
-   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .   5
+   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   5
 
 1.  Introduction
 
@@ -109,9 +109,9 @@ Table of Contents
 
 
 
-Bormann                  Expires 6 October 2024                 [Page 2]
+Bormann & Tiloca         Expires 6 October 2024                 [Page 2]
 
-Internet-Draft  Registry policies “…, with Expert Review      April 2024
+Internet-Draft  Registry policies “… with Expert Review”      April 2024
 
 
    In the past, this has occasionally led to friction where a Designated
@@ -134,7 +134,7 @@ Internet-Draft  Registry policies “…, with Expert Review      April 2024
    4.9, and 4.10 of RFC 8126 [BCP26], this document adds a parallel
    _augmented policy_ that also specifies involving a Designated Expert.
 
-2.1.  RFC Required, With Expert Review Required
+2.1.  RFC Required With Expert Review
 
    This policy is identical to a combination of Sections 4.6 and 4.7 of
    RFC 8126 [BCP26].  The RFC to be published serves as the
@@ -144,7 +144,7 @@ Internet-Draft  Registry policies “…, with Expert Review      April 2024
    Designated Expert is obtained before approving the RFC establishing
    the registration.
 
-2.2.  IETF Review, With Expert Review Required
+2.2.  IETF Review With Expert Review
 
    This policy is identical to a combination of Sections 4.6 and 4.8 of
    RFC 8126 [BCP26].  The RFC to be published serves as the
@@ -153,7 +153,7 @@ Internet-Draft  Registry policies “…, with Expert Review      April 2024
    registration by the Designated Expert is obtained before approving
    the RFC establishing the registration.
 
-2.3.  Standards Action, With Expert Review Required
+2.3.  Standards Action With Expert Review
 
    This policy is identical to a combination of Sections 4.6 and 4.9 of
    RFC 8126 [BCP26], mirroring the requirements of Section 2.2 narrowed
@@ -165,12 +165,12 @@ Internet-Draft  Registry policies “…, with Expert Review      April 2024
 
 
 
-Bormann                  Expires 6 October 2024                 [Page 3]
+Bormann & Tiloca         Expires 6 October 2024                 [Page 3]
 
-Internet-Draft  Registry policies “…, with Expert Review      April 2024
+Internet-Draft  Registry policies “… with Expert Review”      April 2024
 
 
-2.4.  IESG Approval, With Expert Review Required
+2.4.  IESG Approval With Expert Review
 
    This policy is identical to a combination of either Section 4.5 or
    Section 4.6 with Section 4.10 of RFC 8126 [BCP26], depending on the
@@ -190,16 +190,14 @@ Internet-Draft  Registry policies “…, with Expert Review      April 2024
    *  Item (a) in Section 2 of RFC 7120 [BCP100] is extended to include
       the three augmented policies.
 
-   *  Item (4) in Section 3.1 of RFC 7120 [BCP100] is amended as
+   *  Item (2) in Section 3.1 of RFC 7120 [BCP100] is amended as
       follows:
 
-   |  4.  For the registration policies defined in Section 2 of RFC-
-   |      XXXX, the WG chairs request approval from the Designated
-   |      Expert.  If steps 2) and 3) are satisfied, and, if applicable,
-   |      the Designated Expert approval is obtained, the WG chairs
-   |      request approval from the Area Director(s).  The Area
-   |      Director(s) may apply judgement to the request, especially if
-   |      there is a risk of registry depletion.
+   |  2.  The WG chairs determine whether the conditions for early
+   |      allocations described in Section 2 are met, particularly
+   |      conditions (c) and (d).  For the registration policies defined
+   |      in Section 2 of RFC-XXXX, the WG chairs first request review
+   |      and approval from the Designated Expert.
 
 
    // RFC editor: please replace XXXX by the RFC number of this document
@@ -218,15 +216,15 @@ Internet-Draft  Registry policies “…, with Expert Review      April 2024
    This document is all about procedures that need to be implemented by
    IANA, but by itself has no IANA actions.
 
-
-
-
-Bormann                  Expires 6 October 2024                 [Page 4]
-
-Internet-Draft  Registry policies “…, with Expert Review      April 2024
-
-
 6.  Normative References
+
+
+
+
+Bormann & Tiloca         Expires 6 October 2024                 [Page 4]
+
+Internet-Draft  Registry policies “… with Expert Review”      April 2024
+
 
    [BCP100]   Best Current Practice 100,
               <https://www.rfc-editor.org/info/bcp100>.
@@ -256,7 +254,7 @@ Acknowledgments
    common practice of augmenting review-body-based registry policies by
    Expert Review had not been documented sufficiently.
 
-Author's Address
+Authors' Addresses
 
    Carsten Bormann
    Universität Bremen TZI
@@ -267,14 +265,16 @@ Author's Address
    Email: cabo@tzi.org
 
 
+   Marco Tiloca
+   RISE AB
+   Isafjordsgatan 22
+   SE-16440 Stockholm Kista
+   Sweden
+   Email: marco.tiloca@ri.se
 
 
 
 
 
 
-
-
-
-
-Bormann                  Expires 6 October 2024                 [Page 5]
+Bormann & Tiloca         Expires 6 October 2024                 [Page 5]
