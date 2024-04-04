@@ -135,17 +135,16 @@ Specifically:
 
 * Item (a) in {{Section 2 of RFC7120@BCP100}} is extended to include the
   three augmented policies.
-* Item (4) in {{Section 3.1 of RFC7120@BCP100}} is amended as follows:
+* Item (2) in {{Section 3.1 of RFC7120@BCP100}} is amended as follows:
 
 {:quote}
-> {: start="4"}
-  4.  For the registration policies defined in {{augment}} of
-       RFC-XXXX, the WG chairs request approval from the Designated Expert.
-       If steps 2) and 3) are satisfied, and, if applicable, the
-       Designated Expert approval is obtained, the WG chairs request approval
-       from the Area Director(s).
-       The Area Director(s) may apply judgement to the request,
-       especially if there is a risk of registry depletion.
+> {: start="2"}
+  2. The WG chairs determine whether the conditions for early
+     allocations described in Section 2 are met, particularly
+     conditions (c) and (d).
+     For the registration policies defined in {{augment}} of
+     RFC-XXXX, the WG chairs first request review and approval from
+     the Designated Expert.
 
 [^XXXX]
 
