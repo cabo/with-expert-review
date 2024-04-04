@@ -1,5 +1,5 @@
 ---
-title: Registry policies “… with Expert Review”
+title: Registry policies “…, with Expert Review Required”
 # abbrev: "TODO - Abbreviation"
 category: bcp
 
