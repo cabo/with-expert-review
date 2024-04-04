@@ -188,16 +188,16 @@ In a number of places, {{?RFC8881}} uses phrasing such as:
 
 {:quote}
 >  Hence, all assignments to the registry are made on a Standards Action
-   basis per Section 4.6 of [63], with Expert Review required.
+   basis per Section 4.6 of \[63], with Expert Review required.
 
-(here, [63] is a reference to {{RFC8126@BCP100}}.
+(here, \[63] is a reference to {{RFC8126@BCP100}}.
 RFC 8881's predecessor {{?RFC5661}} used:)
 
 {:quote}
 >   All assignments to the registry are made on a Standards Action basis
-    per Section 4.1 of [55], with Expert Review required.
+    per Section 4.1 of \[55], with Expert Review required.
 
-(here, [55] is a reference to {{?RFC5226}}, the precursor of RFC 8126,
+(here, \[55] is a reference to {{?RFC5226}}, the precursor of RFC 8126,
 which listed the well-known policies in its Section {{4.1<RFC5226}}.)
 
 
