@@ -178,6 +178,7 @@ explanation of this usage, include:
 * {{?IANA.uuid}}, interpreting the approved {{?I-D.ietf-uuidrev-rfc4122bis-14}}
 * {{?IANA.cose}}, interpreting {{Section 11 of ?RFC9052}} in conjunction
   with the older {{Section 16 of ?RFC8152}}
+* {{?IANA.ace}}, interpreting {{Section 9 of ?RFC9203}}
 * {{Section 6 of ?RFC9393}}
 * {{Section 10 of ?RFC9528}}
 
