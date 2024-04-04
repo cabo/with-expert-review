@@ -1,10 +1,10 @@
 ---
-title: Registry policies “…, with Expert Review Required”
+title: Registry policies “… with Expert Review”
 # abbrev: "TODO - Abbreviation"
 category: bcp
 
 docname: draft-bormann-gendispatch-with-expert-review-latest
-submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
+submissiontype: IETF
 updates: 7120, 8126
 number:
 date:
@@ -82,7 +82,7 @@ For each of the well-known policies defined in {{Sections 4.7, 4.8,
 4.9, and 4.10 of RFC8126@BCP26}}, this document adds a parallel _augmented
 policy_ that also specifies involving a Designated Expert.
 
-## RFC Required, With Expert Review Required {#rfcreq}
+## RFC Required With Expert Review {#rfcreq}
 
 This policy is identical to a combination of {{Sections 4.6 and 4.7 of RFC8126@BCP26}}.
 The RFC to be published serves as the documentation required by
@@ -92,7 +92,7 @@ It is the responsibility of the stream approving body (see {{Section
 the Designated Expert is obtained before approving the RFC
 establishing the registration.
 
-## IETF Review, With Expert Review Required {#ietfrev}
+## IETF Review With Expert Review {#ietfrev}
 
 This policy is identical to a combination of {{Sections 4.6 and 4.8 of RFC8126@BCP26}}.
 The RFC to be published serves as the documentation required by
@@ -101,13 +101,13 @@ It is the responsibility of the IESG to ensure that an approval for
 the registration by the Designated Expert is obtained before approving
 the RFC establishing the registration.
 
-## Standards Action, With Expert Review Required {#stdsact}
+## Standards Action With Expert Review {#stdsact}
 
 This policy is identical to a combination of {{Sections 4.6 and 4.9 of
 RFC8126@BCP26}}, mirroring the requirements of {{ietfrev}}
 narrowed down to a certain type of RFC to be published.
 
-## IESG Approval, With Expert Review Required
+## IESG Approval With Expert Review
 
 This policy is identical to a combination of either
 Section {{4.5<RFC8126}} or Section {{4.6<RFC8126}}
