@@ -9,14 +9,14 @@ number:
 date:
 consensus: true
 v: 3
-area: GEN
-workgroup: gendispatch Working Group
+area: "General"
+workgroup: "General Area Dispatch"
 keyword:
  - IANA
  - Designated Expert
 venue:
-  mail: gendispatch@ietf.org
-  github: cabo/with-expert-review
+  mail: "gendispatch@ietf.org"
+  github: "cabo/with-expert-review"
 
 author:
   - name: Carsten Bormann
