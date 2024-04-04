@@ -167,6 +167,51 @@ IANA, but by itself has no IANA actions.
 
 --- back
 
+# Usage in Existing Specifications
+
+This appendix is informative.
+
+Examples for RFCs (and one RFC-to-be) and registries created from them
+that use "Standards Action with Expert Review", without further
+explanation of this usage, include:
+
+* {{?IANA.uuid}}, interpreting the approved {{?I-D.ietf-uuidrev-rfc4122bis-14}}
+* {{?IANA.cose}}, interpreting {{Section 11 of ?RFC9052}} in conjunction
+  with the older {{Section 16 of ?RFC8152}}
+* {{Section 6 of ?RFC9393}}
+* {{Section 10 of ?RFC9528}}
+
+## Related Policy Statements Potentially of Interest
+
+
+In a number of places, {{?RFC8881}} uses phrasing such as:
+
+{:quote}
+>  Hence, all assignments to the registry are made on a Standards Action
+   basis per Section 4.6 of [63], with Expert Review required.
+
+(here, [63] is a reference to {{RFC8126@BCP100}}.
+RFC 8881's predecessor {{?RFC5661}} used:)
+
+{:quote}
+>   All assignments to the registry are made on a Standards Action basis
+    per Section 4.1 of [55], with Expert Review required.
+
+(here, [55] is a reference to {{?RFC5226}}, the precursor of RFC 8126,
+which listed the well-known policies in its Section {{4.1<RFC5226}}.)
+
+
+{{?RFC4430}} (written before {{RFC5226}}) uses this phrasing:
+
+{:quote}
+>    *    Assignment from the "RESERVED TO IANA" range needs Standards
+          Action, or non-standards-track RFCs with Expert Review.
+
+Somewhat unrelated, {{?RFC6787}} uses the redundant phrase
+"Specification Required with Expert Review".
+{{Section 5 of ?RFC5797}} uses related phrasing for a more complicated
+requirement.
+
 # Acknowledgments
 {:numbered="false"}
 
