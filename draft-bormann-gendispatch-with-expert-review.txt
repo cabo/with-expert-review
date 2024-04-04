@@ -90,9 +90,13 @@ Table of Contents
    3.  Early Allocation for Augmented Registration Policies  . . . .   4
    4.  Security Considerations . . . . . . . . . . . . . . . . . . .   4
    5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   4
-   6.  Normative References  . . . . . . . . . . . . . . . . . . . .   4
-   Acknowledgments . . . . . . . . . . . . . . . . . . . . . . . . .   5
-   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   5
+   6.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   4
+     6.1.  Normative References  . . . . . . . . . . . . . . . . . .   5
+     6.2.  Informative References  . . . . . . . . . . . . . . . . .   5
+   Appendix A.  Usage in Existing Specifications . . . . . . . . . .   6
+     A.1.  Related Policy Statements Potentially of Interest . . . .   7
+   Acknowledgments . . . . . . . . . . . . . . . . . . . . . . . . .   7
+   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   7
 
 1.  Introduction
 
@@ -102,10 +106,6 @@ Table of Contents
    involve a _Designated Expert_, who is intended to be aware of the
    fine points of what should or should not become a registration in
    that registry (Sections 4.5 and 4.6 of RFC 8126 [BCP26]).  Some other
-   policies involve a _review body_ that autonomously, not involving a
-   _Designated Expert_, decide whether a registration should be accepted
-   (Sections 4.7, 4.8, 4.9, and 4.10 of RFC 8126 [BCP26]).
-
 
 
 
@@ -113,6 +113,10 @@ Bormann & Tiloca         Expires 6 October 2024                 [Page 2]
 
 Internet-Draft  Registry policies “… with Expert Review”      April 2024
 
+
+   policies involve a _review body_ that autonomously, not involving a
+   _Designated Expert_, decide whether a registration should be accepted
+   (Sections 4.7, 4.8, 4.9, and 4.10 of RFC 8126 [BCP26]).
 
    In the past, this has occasionally led to friction where a Designated
    Expert was not consulted by the review body before approving the
@@ -158,10 +162,6 @@ Internet-Draft  Registry policies “… with Expert Review”      April 2024
    This policy is identical to a combination of Sections 4.6 and 4.9 of
    RFC 8126 [BCP26], mirroring the requirements of Section 2.2 narrowed
    down to a certain type of RFC to be published.
-
-
-
-
 
 
 
@@ -216,7 +216,7 @@ Internet-Draft  Registry policies “… with Expert Review”      April 2024
    This document is all about procedures that need to be implemented by
    IANA, but by itself has no IANA actions.
 
-6.  Normative References
+6.  References
 
 
 
@@ -225,6 +225,8 @@ Bormann & Tiloca         Expires 6 October 2024                 [Page 4]
 
 Internet-Draft  Registry policies “… with Expert Review”      April 2024
 
+
+6.1.  Normative References
 
    [BCP100]   Best Current Practice 100,
               <https://www.rfc-editor.org/info/bcp100>.
@@ -247,6 +249,127 @@ Internet-Draft  Registry policies “… with Expert Review”      April 2024
               RFC Editor", RFC 8729, DOI 10.17487/RFC8729, February
               2020, <https://www.rfc-editor.org/rfc/rfc8729>.
 
+6.2.  Informative References
+
+   [I-D.ietf-uuidrev-rfc4122bis-14]
+              Davis, K. R., Peabody, B., and P. Leach, "Universally
+              Unique IDentifiers (UUID)", Work in Progress, Internet-
+              Draft, draft-ietf-uuidrev-rfc4122bis-14, 6 November 2023,
+              <https://datatracker.ietf.org/doc/html/draft-ietf-uuidrev-
+              rfc4122bis-14>.
+
+   [IANA.cose]
+              IANA, "CBOR Object Signing and Encryption (COSE)",
+              <http://www.iana.org/assignments/cose>.
+
+   [IANA.uuid]
+              "*** BROKEN REFERENCE ***".
+
+   [RFC4430]  Sakane, S., Kamada, K., Thomas, M., and J. Vilhuber,
+              "Kerberized Internet Negotiation of Keys (KINK)",
+              RFC 4430, DOI 10.17487/RFC4430, March 2006,
+              <https://www.rfc-editor.org/rfc/rfc4430>.
+
+   [RFC5226]  Narten, T. and H. Alvestrand, "Guidelines for Writing an
+              IANA Considerations Section in RFCs", RFC 5226,
+              DOI 10.17487/RFC5226, May 2008,
+              <https://www.rfc-editor.org/rfc/rfc5226>.
+
+
+
+Bormann & Tiloca         Expires 6 October 2024                 [Page 5]
+
+Internet-Draft  Registry policies “… with Expert Review”      April 2024
+
+
+   [RFC5661]  Shepler, S., Ed., Eisler, M., Ed., and D. Noveck, Ed.,
+              "Network File System (NFS) Version 4 Minor Version 1
+              Protocol", RFC 5661, DOI 10.17487/RFC5661, January 2010,
+              <https://www.rfc-editor.org/rfc/rfc5661>.
+
+   [RFC5797]  Klensin, J. and A. Hoenes, "FTP Command and Extension
+              Registry", RFC 5797, DOI 10.17487/RFC5797, March 2010,
+              <https://www.rfc-editor.org/rfc/rfc5797>.
+
+   [RFC6787]  Burnett, D. and S. Shanmugham, "Media Resource Control
+              Protocol Version 2 (MRCPv2)", RFC 6787,
+              DOI 10.17487/RFC6787, November 2012,
+              <https://www.rfc-editor.org/rfc/rfc6787>.
+
+   [RFC8152]  Schaad, J., "CBOR Object Signing and Encryption (COSE)",
+              RFC 8152, DOI 10.17487/RFC8152, July 2017,
+              <https://www.rfc-editor.org/rfc/rfc8152>.
+
+   [RFC8881]  Noveck, D., Ed. and C. Lever, "Network File System (NFS)
+              Version 4 Minor Version 1 Protocol", RFC 8881,
+              DOI 10.17487/RFC8881, August 2020,
+              <https://www.rfc-editor.org/rfc/rfc8881>.
+
+   [RFC9052]  Schaad, J., "CBOR Object Signing and Encryption (COSE):
+              Structures and Process", STD 96, RFC 9052,
+              DOI 10.17487/RFC9052, August 2022,
+              <https://www.rfc-editor.org/rfc/rfc9052>.
+
+   [RFC9393]  Birkholz, H., Fitzgerald-McKay, J., Schmidt, C., and D.
+              Waltermire, "Concise Software Identification Tags",
+              RFC 9393, DOI 10.17487/RFC9393, June 2023,
+              <https://www.rfc-editor.org/rfc/rfc9393>.
+
+   [RFC9528]  Selander, G., Preuß Mattsson, J., and F. Palombini,
+              "Ephemeral Diffie-Hellman Over COSE (EDHOC)", RFC 9528,
+              DOI 10.17487/RFC9528, March 2024,
+              <https://www.rfc-editor.org/rfc/rfc9528>.
+
+Appendix A.  Usage in Existing Specifications
+
+   This appendix is informative.
+
+   Examples for RFCs (and one RFC-to-be) and registries created from
+   them that use "Standards Action with Expert Review", without further
+   explanation of this usage, include:
+
+   *  [IANA.uuid], interpreting the approved
+      [I-D.ietf-uuidrev-rfc4122bis-14]
+
+
+
+Bormann & Tiloca         Expires 6 October 2024                 [Page 6]
+
+Internet-Draft  Registry policies “… with Expert Review”      April 2024
+
+
+   *  [IANA.cose], interpreting Section 11 of [RFC9052] in conjunction
+      with the older Section 16 of [RFC8152]
+
+   *  Section 6 of [RFC9393]
+
+   *  Section 10 of [RFC9528]
+
+A.1.  Related Policy Statements Potentially of Interest
+
+   In a number of places, [RFC8881] uses phrasing such as:
+
+   |  Hence, all assignments to the registry are made on a Standards
+   |  Action basis per Section 4.6 of [63], with Expert Review required.
+
+   (here, [63] is a reference to RFC 8126 [BCP100].  RFC 8881's
+   predecessor [RFC5661] used:)
+
+   |  All assignments to the registry are made on a Standards Action
+   |  basis per Section 4.1 of [55], with Expert Review required.
+
+   (here, [55] is a reference to [RFC5226], the precursor of RFC 8126,
+   which listed the well-known policies in its Section 4.1.)
+
+   [RFC4430] (written before [RFC5226]) uses this phrasing:
+
+   |  *  Assignment from the "RESERVED TO IANA" range needs Standards
+   |     Action, or non-standards-track RFCs with Expert Review.
+
+   Somewhat unrelated, [RFC6787] uses the redundant phrase
+   "Specification Required with Expert Review".  Section 5 of [RFC5797]
+   uses related phrasing for a more complicated requirement.
+
 Acknowledgments
 
    The creation of this document was prompted by an IESG ballot comment
@@ -265,6 +388,12 @@ Authors' Addresses
    Email: cabo@tzi.org
 
 
+
+Bormann & Tiloca         Expires 6 October 2024                 [Page 7]
+
+Internet-Draft  Registry policies “… with Expert Review”      April 2024
+
+
    Marco Tiloca
    RISE AB
    Isafjordsgatan 22
@@ -277,4 +406,43 @@ Authors' Addresses
 
 
 
-Bormann & Tiloca         Expires 6 October 2024                 [Page 5]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bormann & Tiloca         Expires 6 October 2024                 [Page 8]
