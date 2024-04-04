@@ -28,6 +28,13 @@ author:
     country: Germany
     phone: +49-421-218-63921
     email: cabo@tzi.org
+  - name: Marco Tiloca
+    org: RISE AB
+    street: Isafjordsgatan 22
+    city: Kista
+    code: SE-16440 Stockholm
+    country: Sweden
+    email: marco.tiloca@ri.se
 
 normative:
   BCP100:
