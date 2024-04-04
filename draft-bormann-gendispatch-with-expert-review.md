@@ -5,6 +5,7 @@ category: bcp
 
 docname: draft-bormann-gendispatch-with-expert-review-latest
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
+updates: 7120, 8126
 number:
 date:
 consensus: true
