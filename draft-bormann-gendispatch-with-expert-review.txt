@@ -1,0 +1,448 @@
+
+
+
+
+General Area Dispatch                                         C. Bormann
+Internet-Draft                                    Universität Bremen TZI
+Updates: 7120, 8126 (if approved)                              M. Tiloca
+Intended status: Best Current Practice                           RISE AB
+Expires: 6 October 2024                                     4 April 2024
+
+
+                Registry policies “… with Expert Review”
+          draft-bormann-gendispatch-with-expert-review-latest
+
+Abstract
+
+   This document updates RFC 8126, adding registry policies that augment
+   an existing policy that is based on a review body action with the
+   additional requirement for a Designated Expert review.
+
+   It also updates RFC 7120 with the necessary process to perform early
+   allocations for registries with one of the augmented policies.
+
+About This Document
+
+   This note is to be removed before publishing as an RFC.
+
+   Status information for this document may be found at
+   https://datatracker.ietf.org/doc/draft-bormann-gendispatch-with-
+   expert-review/.
+
+   Discussion of this document takes place on the gendispatch Working
+   Group mailing list (mailto:gendispatch@ietf.org), which is archived
+   at https://mailarchive.ietf.org/arch/browse/gendispatch/.  Subscribe
+   at https://www.ietf.org/mailman/listinfo/gendispatch/.
+
+   Source for this draft and an issue tracker can be found at
+   https://github.com/cabo/with-expert-review.
+
+Status of This Memo
+
+   This Internet-Draft is submitted in full conformance with the
+   provisions of BCP 78 and BCP 79.
+
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Force (IETF).  Note that other groups may also distribute
+   working documents as Internet-Drafts.  The list of current Internet-
+   Drafts is at https://datatracker.ietf.org/drafts/current/.
+
+
+
+
+
+
+
+Bormann & Tiloca         Expires 6 October 2024                 [Page 1]
+
+Internet-Draft  Registry policies “… with Expert Review”      April 2024
+
+
+   Internet-Drafts are draft documents valid for a maximum of six months
+   and may be updated, replaced, or obsoleted by other documents at any
+   time.  It is inappropriate to use Internet-Drafts as reference
+   material or to cite them other than as "work in progress."
+
+   This Internet-Draft will expire on 6 October 2024.
+
+Copyright Notice
+
+   Copyright (c) 2024 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents (https://trustee.ietf.org/
+   license-info) in effect on the date of publication of this document.
+   Please review these documents carefully, as they describe your rights
+   and restrictions with respect to this document.  Code Components
+   extracted from this document must include Revised BSD License text as
+   described in Section 4.e of the Trust Legal Provisions and are
+   provided without warranty as described in the Revised BSD License.
+
+Table of Contents
+
+   1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
+   2.  Augmented Registration Policies . . . . . . . . . . . . . . .   3
+     2.1.  RFC Required With Expert Review . . . . . . . . . . . . .   3
+     2.2.  IETF Review With Expert Review  . . . . . . . . . . . . .   3
+     2.3.  Standards Action With Expert Review . . . . . . . . . . .   3
+     2.4.  IESG Approval With Expert Review  . . . . . . . . . . . .   4
+   3.  Early Allocation for Augmented Registration Policies  . . . .   4
+   4.  Security Considerations . . . . . . . . . . . . . . . . . . .   4
+   5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   4
+   6.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   4
+     6.1.  Normative References  . . . . . . . . . . . . . . . . . .   5
+     6.2.  Informative References  . . . . . . . . . . . . . . . . .   5
+   Appendix A.  Usage in Existing Specifications . . . . . . . . . .   7
+     A.1.  Related Policy Statements Potentially of Interest . . . .   7
+   Acknowledgments . . . . . . . . . . . . . . . . . . . . . . . . .   8
+   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   8
+
+1.  Introduction
+
+   Section 4 of RFC 8126 [BCP26] defines a number of _well-known
+   policies_ that can be referenced as registration policies from
+   documents that set up IANA registries.  Some of these policies
+   involve a _Designated Expert_, who is intended to be aware of the
+   fine points of what should or should not become a registration in
+   that registry (Sections 4.5 and 4.6 of RFC 8126 [BCP26]).  Some other
+
+
+
+Bormann & Tiloca         Expires 6 October 2024                 [Page 2]
+
+Internet-Draft  Registry policies “… with Expert Review”      April 2024
+
+
+   policies involve a _review body_ that autonomously, not involving a
+   _Designated Expert_, decide whether a registration should be accepted
+   (Sections 4.7, 4.8, 4.9, and 4.10 of RFC 8126 [BCP26]).
+
+   In the past, this has occasionally led to friction where a Designated
+   Expert was not consulted by the review body before approving the
+   registration, missing some finer point (such as certain consistency
+   requirements) that would have been pointed out by the expert.
+
+   This document updates Section 4 of RFC 8126 [BCP26], adding registry
+   policies that augment an existing policy that is based on a review
+   body action with the additional requirement for a Designated Expert
+   review.
+
+   It also updates Sections 2 and 3 of RFC 7120 [BCP100] with the
+   necessary process to perform early allocations for registries with
+   one of the augmented policies.
+
+2.  Augmented Registration Policies
+
+   For each of the well-known policies defined in Sections 4.7, 4.8,
+   4.9, and 4.10 of RFC 8126 [BCP26], this document adds a parallel
+   _augmented policy_ that also specifies involving a Designated Expert.
+
+2.1.  RFC Required With Expert Review
+
+   This policy is identical to a combination of Sections 4.6 and 4.7 of
+   RFC 8126 [BCP26].  The RFC to be published serves as the
+   documentation required by Section 4.6 of RFC 8126 [BCP26].  It is the
+   responsibility of the stream approving body (see Section 5.1 of
+   [RFC8729]) to ensure that an approval for the registration by the
+   Designated Expert is obtained before approving the RFC establishing
+   the registration.
+
+2.2.  IETF Review With Expert Review
+
+   This policy is identical to a combination of Sections 4.6 and 4.8 of
+   RFC 8126 [BCP26].  The RFC to be published serves as the
+   documentation required by Section 4.6 of RFC 8126 [BCP26].  It is the
+   responsibility of the IESG to ensure that an approval for the
+   registration by the Designated Expert is obtained before approving
+   the RFC establishing the registration.
+
+2.3.  Standards Action With Expert Review
+
+   This policy is identical to a combination of Sections 4.6 and 4.9 of
+   RFC 8126 [BCP26], mirroring the requirements of Section 2.2 narrowed
+   down to a certain type of RFC to be published.
+
+
+
+Bormann & Tiloca         Expires 6 October 2024                 [Page 3]
+
+Internet-Draft  Registry policies “… with Expert Review”      April 2024
+
+
+2.4.  IESG Approval With Expert Review
+
+   This policy is identical to a combination of either Section 4.5 or
+   Section 4.6 with Section 4.10 of RFC 8126 [BCP26], depending on the
+   discretion of the IESG mentioned in the first paragraph of the latter
+   section (which may be additionally informed by input from the
+   Designated Expert).  It is the responsibility of the IESG to ensure
+   that an approval for the registration by the Designated Expert is
+   obtained before approving the registration.
+
+3.  Early Allocation for Augmented Registration Policies
+
+   This document updates RFC 7120 [BCP100] to apply to the augmented
+   policies defined above in Section 2.1, Section 2.2, and Section 2.3.
+
+   Specifically:
+
+   *  Item (a) in Section 2 of RFC 7120 [BCP100] is extended to include
+      the three augmented policies.
+
+   *  Item (2) in Section 3.1 of RFC 7120 [BCP100] is amended as
+      follows:
+
+   |  2.  The WG chairs determine whether the conditions for early
+   |      allocations described in Section 2 are met, particularly
+   |      conditions (c) and (d).  For the registration policies defined
+   |      in Section 2 of RFC-XXXX, the WG chairs first request review
+   |      and approval from the Designated Expert.
+
+
+   // RFC editor: please replace XXXX by the RFC number of this document
+   // and delete this note.
+
+4.  Security Considerations
+
+   The security considerations of Section 5 of RFC 7120 [BCP100] and
+   Section 12 of RFC 8126 [BCP26] apply.  Augmenting registration
+   policies by Designated Expert involvement may help reduce the
+   potential of introducing security issues by adding inconsistent or
+   insecure registrations to a registry.
+
+5.  IANA Considerations
+
+   This document is all about procedures that need to be implemented by
+   IANA, but by itself has no IANA actions.
+
+6.  References
+
+
+
+
+Bormann & Tiloca         Expires 6 October 2024                 [Page 4]
+
+Internet-Draft  Registry policies “… with Expert Review”      April 2024
+
+
+6.1.  Normative References
+
+   [BCP100]   Best Current Practice 100,
+              <https://www.rfc-editor.org/info/bcp100>.
+              At the time of writing, this BCP comprises the following:
+
+              Cotton, M., "Early IANA Allocation of Standards Track Code
+              Points", BCP 100, RFC 7120, DOI 10.17487/RFC7120, January
+              2014, <https://www.rfc-editor.org/info/rfc7120>.
+
+   [BCP26]    Best Current Practice 26,
+              <https://www.rfc-editor.org/info/bcp26>.
+              At the time of writing, this BCP comprises the following:
+
+              Cotton, M., Leiba, B., and T. Narten, "Guidelines for
+              Writing an IANA Considerations Section in RFCs", BCP 26,
+              RFC 8126, DOI 10.17487/RFC8126, June 2017,
+              <https://www.rfc-editor.org/info/rfc8126>.
+
+   [RFC8729]  Housley, R., Ed. and L. Daigle, Ed., "The RFC Series and
+              RFC Editor", RFC 8729, DOI 10.17487/RFC8729, February
+              2020, <https://www.rfc-editor.org/rfc/rfc8729>.
+
+6.2.  Informative References
+
+   [I-D.ietf-uuidrev-rfc4122bis-14]
+              Davis, K. R., Peabody, B., and P. Leach, "Universally
+              Unique IDentifiers (UUID)", Work in Progress, Internet-
+              Draft, draft-ietf-uuidrev-rfc4122bis-14, 6 November 2023,
+              <https://datatracker.ietf.org/doc/html/draft-ietf-uuidrev-
+              rfc4122bis-14>.
+
+   [IANA.ace] IANA, "Authentication and Authorization for Constrained
+              Environments (ACE)",
+              <http://www.iana.org/assignments/ace>.
+
+   [IANA.cose]
+              IANA, "CBOR Object Signing and Encryption (COSE)",
+              <http://www.iana.org/assignments/cose>.
+
+   [IANA.uuid]
+              "*** BROKEN REFERENCE ***".
+
+   [RFC4430]  Sakane, S., Kamada, K., Thomas, M., and J. Vilhuber,
+              "Kerberized Internet Negotiation of Keys (KINK)",
+              RFC 4430, DOI 10.17487/RFC4430, March 2006,
+              <https://www.rfc-editor.org/rfc/rfc4430>.
+
+
+
+
+Bormann & Tiloca         Expires 6 October 2024                 [Page 5]
+
+Internet-Draft  Registry policies “… with Expert Review”      April 2024
+
+
+   [RFC5226]  Narten, T. and H. Alvestrand, "Guidelines for Writing an
+              IANA Considerations Section in RFCs", RFC 5226,
+              DOI 10.17487/RFC5226, May 2008,
+              <https://www.rfc-editor.org/rfc/rfc5226>.
+
+   [RFC5661]  Shepler, S., Ed., Eisler, M., Ed., and D. Noveck, Ed.,
+              "Network File System (NFS) Version 4 Minor Version 1
+              Protocol", RFC 5661, DOI 10.17487/RFC5661, January 2010,
+              <https://www.rfc-editor.org/rfc/rfc5661>.
+
+   [RFC5797]  Klensin, J. and A. Hoenes, "FTP Command and Extension
+              Registry", RFC 5797, DOI 10.17487/RFC5797, March 2010,
+              <https://www.rfc-editor.org/rfc/rfc5797>.
+
+   [RFC6787]  Burnett, D. and S. Shanmugham, "Media Resource Control
+              Protocol Version 2 (MRCPv2)", RFC 6787,
+              DOI 10.17487/RFC6787, November 2012,
+              <https://www.rfc-editor.org/rfc/rfc6787>.
+
+   [RFC8152]  Schaad, J., "CBOR Object Signing and Encryption (COSE)",
+              RFC 8152, DOI 10.17487/RFC8152, July 2017,
+              <https://www.rfc-editor.org/rfc/rfc8152>.
+
+   [RFC8881]  Noveck, D., Ed. and C. Lever, "Network File System (NFS)
+              Version 4 Minor Version 1 Protocol", RFC 8881,
+              DOI 10.17487/RFC8881, August 2020,
+              <https://www.rfc-editor.org/rfc/rfc8881>.
+
+   [RFC9052]  Schaad, J., "CBOR Object Signing and Encryption (COSE):
+              Structures and Process", STD 96, RFC 9052,
+              DOI 10.17487/RFC9052, August 2022,
+              <https://www.rfc-editor.org/rfc/rfc9052>.
+
+   [RFC9203]  Palombini, F., Seitz, L., Selander, G., and M. Gunnarsson,
+              "The Object Security for Constrained RESTful Environments
+              (OSCORE) Profile of the Authentication and Authorization
+              for Constrained Environments (ACE) Framework", RFC 9203,
+              DOI 10.17487/RFC9203, August 2022,
+              <https://www.rfc-editor.org/rfc/rfc9203>.
+
+   [RFC9393]  Birkholz, H., Fitzgerald-McKay, J., Schmidt, C., and D.
+              Waltermire, "Concise Software Identification Tags",
+              RFC 9393, DOI 10.17487/RFC9393, June 2023,
+              <https://www.rfc-editor.org/rfc/rfc9393>.
+
+
+
+
+
+
+
+Bormann & Tiloca         Expires 6 October 2024                 [Page 6]
+
+Internet-Draft  Registry policies “… with Expert Review”      April 2024
+
+
+   [RFC9528]  Selander, G., Preuß Mattsson, J., and F. Palombini,
+              "Ephemeral Diffie-Hellman Over COSE (EDHOC)", RFC 9528,
+              DOI 10.17487/RFC9528, March 2024,
+              <https://www.rfc-editor.org/rfc/rfc9528>.
+
+Appendix A.  Usage in Existing Specifications
+
+   This appendix is informative.
+
+   Examples for RFCs (and one RFC-to-be) and registries created from
+   them that use "Standards Action with Expert Review", without further
+   explanation of this usage, include:
+
+   *  [IANA.uuid], interpreting the approved
+      [I-D.ietf-uuidrev-rfc4122bis-14]
+
+   *  [IANA.cose], interpreting Section 11 of [RFC9052] in conjunction
+      with the older Section 16 of [RFC8152]
+
+   *  [IANA.ace], interpreting Section 9 of [RFC9203]
+
+   *  Section 6 of [RFC9393]
+
+   *  Section 10 of [RFC9528]
+
+A.1.  Related Policy Statements Potentially of Interest
+
+   In a number of places, [RFC8881] uses phrasing such as:
+
+   |  Hence, all assignments to the registry are made on a Standards
+   |  Action basis per Section 4.6 of [63], with Expert Review required.
+
+   (here, [63] is a reference to RFC 8126 [BCP100].  RFC 8881's
+   predecessor [RFC5661] used:)
+
+   |  All assignments to the registry are made on a Standards Action
+   |  basis per Section 4.1 of [55], with Expert Review required.
+
+   (here, [55] is a reference to [RFC5226], the precursor of RFC 8126,
+   which listed the well-known policies in its Section 4.1.)
+
+   [RFC4430] (written before [RFC5226]) uses this phrasing:
+
+   |  *  Assignment from the "RESERVED TO IANA" range needs Standards
+   |     Action, or non-standards-track RFCs with Expert Review.
+
+
+
+
+
+
+Bormann & Tiloca         Expires 6 October 2024                 [Page 7]
+
+Internet-Draft  Registry policies “… with Expert Review”      April 2024
+
+
+   Somewhat unrelated, [RFC6787] uses the redundant phrase
+   "Specification Required with Expert Review".  Section 5 of [RFC5797]
+   uses related phrasing for a more complicated requirement.
+
+Acknowledgments
+
+   The creation of this document was prompted by an IESG ballot comment
+   from John Scudder, which led to the observation that the now somewhat
+   common practice of augmenting review-body-based registry policies by
+   Expert Review had not been documented sufficiently.
+
+Authors' Addresses
+
+   Carsten Bormann
+   Universität Bremen TZI
+   Postfach 330440
+   D-28359 Bremen
+   Germany
+   Phone: +49-421-218-63921
+   Email: cabo@tzi.org
+
+
+   Marco Tiloca
+   RISE AB
+   Isafjordsgatan 22
+   SE-16440 Stockholm Kista
+   Sweden
+   Email: marco.tiloca@ri.se
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bormann & Tiloca         Expires 6 October 2024                 [Page 8]
