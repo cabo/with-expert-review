@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-07-21T00:59:12.106070+00:00",
+  "timestamp": "2024-07-23T00:55:38.977279+00:00",
   "repo": "cabo/with-expert-review",
   "labels": [
     {
@@ -49,6 +49,31 @@
       "color": "ffffff"
     }
   ],
-  "issues": [],
+  "issues": [
+    {
+      "number": 1,
+      "id": "I_kwDOLpn0z86QcxrJ",
+      "title": "Examples of complex \"experting\"",
+      "url": "https://github.com/cabo/with-expert-review/issues/1",
+      "state": "OPEN",
+      "author": "chrysn",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "From today's dispatch discussion, I think this needs examples for where very precise expert input is needed.\r\n\r\nAn example I can provide are CoAP option numbers. There are some simple properties that the expert checks (optional, proxy unsafe, no-cache-key), and those are usually discussed in the course of the document's progress toward the IETF/IESG review. But there is another aspect to it that is about managing scarcity, and the \"0-255\"/\"256-2047\"/... distinction expresses that insufficiently: The real issue is that there are 11 values that are highly efficient in any single situation, and only 1/4th of them has the right bits. Selecting a number and being frugal about it involves understanding which options the new option would typically be used with, which other scenarios could compete with that, on top of considering how those options would be created and processed in sequence.\r\n\r\nIn cases of fixed fields (say, UDP ports), a requester asks for a number and IANA locks it in at some point, or the requester just asks for \"a\" number, and any is assigned \u2013 all choices are good enough. But in the case of CoAP options, selecting a good value requires a lot of understanding that is not even baked into the expert review guidelines (presumably because at that point everyone involved knew how it works anyway, and/or didn't think there would be much need for guidance). IANA is in no position to pick a good number, and without one of the experts (or the CoRE group) involved, I think chances of a good number being picked are slim.",
+      "createdAt": "2024-07-22T18:09:34Z",
+      "updatedAt": "2024-07-22T19:31:24Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "cabo",
+          "authorAssociation": "OWNER",
+          "body": "I think \"correct\" vs. \"good\" is an interesting discussion.\r\nI'm sure many registrants would forgo \"good\" for \"fast registration\".\r\nWe can't make that tradeoff for \"correct\".",
+          "createdAt": "2024-07-22T19:31:23Z",
+          "updatedAt": "2024-07-22T19:31:23Z"
+        }
+      ]
+    }
+  ],
   "pulls": []
 }
