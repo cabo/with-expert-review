@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-10-01T01:08:33.805876+00:00",
+  "timestamp": "2024-10-03T01:02:29.096938+00:00",
   "repo": "cabo/with-expert-review",
   "labels": [
     {
@@ -73,6 +73,54 @@
           "updatedAt": "2024-07-22T19:31:23Z"
         }
       ]
+    },
+    {
+      "number": 2,
+      "id": "I_kwDOLpn0z86Yrg_S",
+      "title": "Explain \"the three augmented policies\"",
+      "url": "https://github.com/cabo/with-expert-review/issues/2",
+      "state": "OPEN",
+      "author": "marco-tiloca-sics",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Proposed change to the first bullet point in Section 3:\r\n\r\nOLD:\r\n> * Item (a) in Section 2 of RFC 7120 [BCP100] is extended to include the three augmented policies.\r\n\r\nNEW:\r\n> * Item (a) in Section 2 of RFC 7120 [BCP100] is extended to include the three augmented policies \"RFC Required With Expert Review\", \"IETF Review With Expert Review\", and \"Standards Action With Expert Review\" (see Sections 2.1, 2.2, and 2.3 of the present document, respectively).",
+      "createdAt": "2024-10-02T12:47:11Z",
+      "updatedAt": "2024-10-02T12:47:11Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 3,
+      "id": "I_kwDOLpn0z86Yrmvm",
+      "title": "WG Chairs involvement in the Early Allocation process",
+      "url": "https://github.com/cabo/with-expert-review/issues/3",
+      "state": "OPEN",
+      "author": "marco-tiloca-sics",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "In a side discussion with IANA, we agreed on a formulation for documents that mint these hybrid policies and rightly discuss also the case when the Early Allocation process from RFC 7120 is used.\r\n\r\nThat formulation, already used in some Internet Drafts, says:\r\n\r\n> The procedure for early IANA allocation of Standards Track code points defined in [RFC7120] also applies. When such a procedure is used, IANA will ask the designated expert(s) to approve the early allocation before registration. In addition, WG chairs are encouraged to consult the expert(s) early during the process outlined in Section 3.1 of [RFC7120].\r\n\r\nBuilding on that, the text in Section 3 of this document can be revised as below.\r\n\r\nOLD\r\n> 2. The WG chairs determine whether the conditions for early allocations described in Section 2 are met, particularly conditions (c) and (d). For the registration policies defined in Section 2 of RFC-XXXX, the WG chairs first request review and approval from the Designated Expert.\r\n\r\nNEW\r\n> 2. The WG chairs determine whether the conditions for early allocations described in Section 2 are met, particularly conditions (c) and (d). For the registration policies defined in Section 2 of RFC-XXXX, IANA will ask the Designated Expert(s) to approve the early allocation before registration. In addition, WG chairs are encouraged to consult the Expert(s) early during the early allocation process.\r\n",
+      "createdAt": "2024-10-02T12:54:51Z",
+      "updatedAt": "2024-10-02T12:54:51Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 4,
+      "id": "I_kwDOLpn0z86YroJg",
+      "title": "Broken reference",
+      "url": "https://github.com/cabo/with-expert-review/issues/4",
+      "state": "OPEN",
+      "author": "marco-tiloca-sics",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "In Section 6.2 \"Informative References\", we have the reference:\r\n\r\n> [IANA.uuid] \"*** BROKEN REFERENCE ***\".\r\n",
+      "createdAt": "2024-10-02T12:56:46Z",
+      "updatedAt": "2024-10-02T12:56:46Z",
+      "closedAt": null,
+      "comments": []
     }
   ],
   "pulls": []
