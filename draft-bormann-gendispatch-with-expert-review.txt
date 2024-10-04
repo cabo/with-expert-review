@@ -84,17 +84,17 @@ Table of Contents
    1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
    2.  Augmented Registration Policies . . . . . . . . . . . . . . .   3
      2.1.  RFC Required With Expert Review . . . . . . . . . . . . .   3
-     2.2.  IETF Review With Expert Review  . . . . . . . . . . . . .   3
-     2.3.  Standards Action With Expert Review . . . . . . . . . . .   3
+     2.2.  IETF Review With Expert Review  . . . . . . . . . . . . .   4
+     2.3.  Standards Action With Expert Review . . . . . . . . . . .   4
      2.4.  IESG Approval With Expert Review  . . . . . . . . . . . .   4
    3.  Early Allocation for Augmented Registration Policies  . . . .   4
-   4.  Security Considerations . . . . . . . . . . . . . . . . . . .   4
+   4.  Security Considerations . . . . . . . . . . . . . . . . . . .   5
    5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   5
    6.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   5
      6.1.  Normative References  . . . . . . . . . . . . . . . . . .   5
      6.2.  Informative References  . . . . . . . . . . . . . . . . .   5
    Appendix A.  Usage in Existing Specifications . . . . . . . . . .   7
-     A.1.  Related Policy Statements Potentially of Interest . . . .   7
+     A.1.  Related Policy Statements Potentially of Interest . . . .   8
    Acknowledgments . . . . . . . . . . . . . . . . . . . . . . . . .   8
    Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   8
 
@@ -122,6 +122,13 @@ Internet-Draft  Registry policies “… with Expert Review”    October 2024
    Expert was not consulted by the review body before approving the
    registration, missing some finer point (such as certain consistency
    requirements) that would have been pointed out by the expert.
+   // As additional rationale that may be too detailed for the published
+   // version of this document, https://github.com/cabo/with-expert-
+   // review/issues/1 (https://github.com/cabo/with-expert-review/
+   // issues/1) contains an example where the Designated Expert is
+   // needed to maintain overall consistency (and additional efficiency,
+   // if desired).  (This editors' note will be deleted by the RFC
+   // editor.)
 
    This document updates Section 4 of RFC 8126 [BCP26], adding registry
    policies that augment an existing policy that is based on a review
@@ -148,6 +155,21 @@ Internet-Draft  Registry policies “… with Expert Review”    October 2024
    Designated Expert is obtained before approving the RFC establishing
    the registration.
 
+
+
+
+
+
+
+
+
+
+
+Bormann & Tiloca          Expires 7 April 2025                  [Page 3]
+
+Internet-Draft  Registry policies “… with Expert Review”    October 2024
+
+
 2.2.  IETF Review With Expert Review
 
    This policy is identical to a combination of Sections 4.6 and 4.8 of
@@ -162,13 +184,6 @@ Internet-Draft  Registry policies “… with Expert Review”    October 2024
    This policy is identical to a combination of Sections 4.6 and 4.9 of
    RFC 8126 [BCP26], mirroring the requirements of Section 2.2 narrowed
    down to a certain type of RFC to be published.
-
-
-
-Bormann & Tiloca          Expires 7 April 2025                  [Page 3]
-
-Internet-Draft  Registry policies “… with Expert Review”    October 2024
-
 
 2.4.  IESG Approval With Expert Review
 
@@ -205,6 +220,12 @@ Internet-Draft  Registry policies “… with Expert Review”    October 2024
    |      early during the early allocation process.
 
 
+
+Bormann & Tiloca          Expires 7 April 2025                  [Page 4]
+
+Internet-Draft  Registry policies “… with Expert Review”    October 2024
+
+
    // RFC editor: please replace XXXX by the RFC number of this document
    // and delete this note.
 
@@ -215,16 +236,6 @@ Internet-Draft  Registry policies “… with Expert Review”    October 2024
    policies by Designated Expert involvement may help reduce the
    potential of introducing security issues by adding inconsistent or
    insecure registrations to a registry.
-
-
-
-
-
-
-Bormann & Tiloca          Expires 7 April 2025                  [Page 4]
-
-Internet-Draft  Registry policies “… with Expert Review”    October 2024
-
 
 5.  IANA Considerations
 
@@ -258,6 +269,19 @@ Internet-Draft  Registry policies “… with Expert Review”    October 2024
 
 6.2.  Informative References
 
+
+
+
+
+
+
+
+
+Bormann & Tiloca          Expires 7 April 2025                  [Page 5]
+
+Internet-Draft  Registry policies “… with Expert Review”    October 2024
+
+
    [I-D.ietf-uuidrev-rfc4122bis-14]
               Davis, K. R., Peabody, B., and P. Leach, "Universally
               Unique IDentifiers (UUID)", Work in Progress, Internet-
@@ -272,15 +296,6 @@ Internet-Draft  Registry policies “… with Expert Review”    October 2024
    [IANA.cose]
               IANA, "CBOR Object Signing and Encryption (COSE)",
               <https://www.iana.org/assignments/cose>.
-
-
-
-
-
-Bormann & Tiloca          Expires 7 April 2025                  [Page 5]
-
-Internet-Draft  Registry policies “… with Expert Review”    October 2024
-
 
    [IANA.uuid]
               IANA, "UUID", <https://www.iana.org/assignments/uuid>.
@@ -313,6 +328,16 @@ Internet-Draft  Registry policies “… with Expert Review”    October 2024
               RFC 8152, DOI 10.17487/RFC8152, July 2017,
               <https://www.rfc-editor.org/rfc/rfc8152>.
 
+
+
+
+
+
+Bormann & Tiloca          Expires 7 April 2025                  [Page 6]
+
+Internet-Draft  Registry policies “… with Expert Review”    October 2024
+
+
    [RFC8881]  Noveck, D., Ed. and C. Lever, "Network File System (NFS)
               Version 4 Minor Version 1 Protocol", RFC 8881,
               DOI 10.17487/RFC8881, August 2020,
@@ -329,14 +354,6 @@ Internet-Draft  Registry policies “… with Expert Review”    October 2024
               for Constrained Environments (ACE) Framework", RFC 9203,
               DOI 10.17487/RFC9203, August 2022,
               <https://www.rfc-editor.org/rfc/rfc9203>.
-
-
-
-
-Bormann & Tiloca          Expires 7 April 2025                  [Page 6]
-
-Internet-Draft  Registry policies “… with Expert Review”    October 2024
-
 
    [RFC9393]  Birkholz, H., Fitzgerald-McKay, J., Schmidt, C., and D.
               Waltermire, "Concise Software Identification Tags",
@@ -368,6 +385,15 @@ Appendix A.  Usage in Existing Specifications
 
    *  Section 10 of [RFC9528]
 
+
+
+
+
+Bormann & Tiloca          Expires 7 April 2025                  [Page 7]
+
+Internet-Draft  Registry policies “… with Expert Review”    October 2024
+
+
 A.1.  Related Policy Statements Potentially of Interest
 
    In a number of places, [RFC8881] uses phrasing such as:
@@ -385,14 +411,6 @@ A.1.  Related Policy Statements Potentially of Interest
    which listed the well-known policies in its Section 4.1.)
 
    [RFC4430] (written before [RFC5226]) uses this phrasing:
-
-
-
-
-Bormann & Tiloca          Expires 7 April 2025                  [Page 7]
-
-Internet-Draft  Registry policies “… with Expert Review”    October 2024
-
 
    |  *  Assignment from the "RESERVED TO IANA" range needs Standards
    |     Action, or non-standards-track RFCs with Expert Review.
@@ -424,6 +442,14 @@ Authors' Addresses
    Isafjordsgatan 22
    SE-16440 Stockholm Kista
    Sweden
+
+
+
+Bormann & Tiloca          Expires 7 April 2025                  [Page 8]
+
+Internet-Draft  Registry policies “… with Expert Review”    October 2024
+
+
    Email: marco.tiloca@ri.se
 
 
@@ -445,4 +471,34 @@ Authors' Addresses
 
 
 
-Bormann & Tiloca          Expires 7 April 2025                  [Page 8]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bormann & Tiloca          Expires 7 April 2025                  [Page 9]
