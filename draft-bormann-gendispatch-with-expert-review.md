@@ -134,7 +134,9 @@ defined above in {{rfcreq}}, {{ietfrev}}, and {{stdsact}}.
 Specifically:
 
 * Item (a) in {{Section 2 of RFC7120@BCP100}} is extended to include the
-  three augmented policies.
+  three augmented policies "{{<<rfcreq}}", "{{<<ietfrev}}", and "{{<<stdsact}}"
+  (see Sections {{<rfcreq}}, {{<ietfrev}}, and {{<stdsact}}
+  of the present document, respectively).
 * Item (2) in {{Section 3.1 of RFC7120@BCP100}} is amended as follows:
 
 {:quote}
