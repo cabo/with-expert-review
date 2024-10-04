@@ -77,6 +77,14 @@ In the past, this has occasionally led to friction where a Designated
 Expert was not consulted by the review body before approving the
 registration, missing some finer point (such as certain consistency
 requirements) that would have been pointed out by the expert.
+[^experting]
+
+[^experting]: As additional rationale that may be too detailed for
+    the published version of this document,
+    <https://github.com/cabo/with-expert-review/issues/1>
+    contains an example where the Designated Expert is needed to
+    maintain overall consistency (and additional efficiency, if
+    desired).  (This editors' note will be deleted by the RFC editor.)
 
 [^a1-] {{Section 4 of RFC8126@BCP26}}, [^a2-]
 
