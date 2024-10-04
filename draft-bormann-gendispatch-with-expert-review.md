@@ -143,8 +143,10 @@ Specifically:
      allocations described in Section 2 are met, particularly
      conditions (c) and (d).
      For the registration policies defined in {{augment}} of
-     RFC-XXXX, the WG chairs first request review and approval from
-     the Designated Expert.
+     RFC-XXXX, IANA will ask the Designated Expert(s) to approve the
+     early allocation before registration.
+     In addition, WG chairs are encouraged to consult the Expert(s)
+     early during the early allocation process.
 
 [^XXXX]
 
