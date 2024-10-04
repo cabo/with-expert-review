@@ -89,7 +89,7 @@ Table of Contents
      2.4.  IESG Approval With Expert Review  . . . . . . . . . . . .   4
    3.  Early Allocation for Augmented Registration Policies  . . . .   4
    4.  Security Considerations . . . . . . . . . . . . . . . . . . .   4
-   5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   4
+   5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   5
    6.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   5
      6.1.  Normative References  . . . . . . . . . . . . . . . . . .   5
      6.2.  Informative References  . . . . . . . . . . . . . . . . .   5
@@ -188,7 +188,10 @@ Internet-Draft  Registry policies “… with Expert Review”    October 2024
    Specifically:
 
    *  Item (a) in Section 2 of RFC 7120 [BCP100] is extended to include
-      the three augmented policies.
+      the three augmented policies "RFC Required With Expert Review",
+      "IETF Review With Expert Review", and "Standards Action With
+      Expert Review" (see Sections 2.1, 2.2, and 2.3 of the present
+      document, respectively).
 
    *  Item (2) in Section 3.1 of RFC 7120 [BCP100] is amended as
       follows:
@@ -213,10 +216,7 @@ Internet-Draft  Registry policies “… with Expert Review”    October 2024
    potential of introducing security issues by adding inconsistent or
    insecure registrations to a registry.
 
-5.  IANA Considerations
 
-   This document is all about procedures that need to be implemented by
-   IANA, but by itself has no IANA actions.
 
 
 
@@ -225,6 +225,11 @@ Bormann & Tiloca          Expires 7 April 2025                  [Page 4]
 
 Internet-Draft  Registry policies “… with Expert Review”    October 2024
 
+
+5.  IANA Considerations
+
+   This document is all about procedures that need to be implemented by
+   IANA, but by itself has no IANA actions.
 
 6.  References
 
@@ -268,11 +273,6 @@ Internet-Draft  Registry policies “… with Expert Review”    October 2024
               IANA, "CBOR Object Signing and Encryption (COSE)",
               <https://www.iana.org/assignments/cose>.
 
-   [IANA.uuid]
-              IANA, "UUID", <https://www.iana.org/assignments/uuid>.
-
-
-
 
 
 
@@ -281,6 +281,9 @@ Bormann & Tiloca          Expires 7 April 2025                  [Page 5]
 
 Internet-Draft  Registry policies “… with Expert Review”    October 2024
 
+
+   [IANA.uuid]
+              IANA, "UUID", <https://www.iana.org/assignments/uuid>.
 
    [RFC4430]  Sakane, S., Kamada, K., Thomas, M., and J. Vilhuber,
               "Kerberized Internet Negotiation of Keys (KINK)",
@@ -326,9 +329,6 @@ Internet-Draft  Registry policies “… with Expert Review”    October 2024
               for Constrained Environments (ACE) Framework", RFC 9203,
               DOI 10.17487/RFC9203, August 2022,
               <https://www.rfc-editor.org/rfc/rfc9203>.
-
-
-
 
 
 
