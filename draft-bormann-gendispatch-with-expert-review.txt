@@ -6,7 +6,7 @@ General Area Dispatch                                         C. Bormann
 Internet-Draft                                    Universität Bremen TZI
 Updates: 7120, 8126 (if approved)                              M. Tiloca
 Intended status: Best Current Practice                           RISE AB
-Expires: 6 October 2024                                     4 April 2024
+Expires: 7 April 2025                                     4 October 2024
 
 
                 Registry policies “… with Expert Review”
@@ -53,9 +53,9 @@ Status of This Memo
 
 
 
-Bormann & Tiloca         Expires 6 October 2024                 [Page 1]
+Bormann & Tiloca          Expires 7 April 2025                  [Page 1]
 
-Internet-Draft  Registry policies “… with Expert Review”      April 2024
+Internet-Draft  Registry policies “… with Expert Review”    October 2024
 
 
    Internet-Drafts are draft documents valid for a maximum of six months
@@ -63,7 +63,7 @@ Internet-Draft  Registry policies “… with Expert Review”      April 2024
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 6 October 2024.
+   This Internet-Draft will expire on 7 April 2025.
 
 Copyright Notice
 
@@ -90,7 +90,7 @@ Table of Contents
    3.  Early Allocation for Augmented Registration Policies  . . . .   4
    4.  Security Considerations . . . . . . . . . . . . . . . . . . .   4
    5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   4
-   6.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   4
+   6.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   5
      6.1.  Normative References  . . . . . . . . . . . . . . . . . .   5
      6.2.  Informative References  . . . . . . . . . . . . . . . . .   5
    Appendix A.  Usage in Existing Specifications . . . . . . . . . .   7
@@ -109,9 +109,9 @@ Table of Contents
 
 
 
-Bormann & Tiloca         Expires 6 October 2024                 [Page 2]
+Bormann & Tiloca          Expires 7 April 2025                  [Page 2]
 
-Internet-Draft  Registry policies “… with Expert Review”      April 2024
+Internet-Draft  Registry policies “… with Expert Review”    October 2024
 
 
    policies involve a _review body_ that autonomously, not involving a
@@ -165,9 +165,9 @@ Internet-Draft  Registry policies “… with Expert Review”      April 2024
 
 
 
-Bormann & Tiloca         Expires 6 October 2024                 [Page 3]
+Bormann & Tiloca          Expires 7 April 2025                  [Page 3]
 
-Internet-Draft  Registry policies “… with Expert Review”      April 2024
+Internet-Draft  Registry policies “… with Expert Review”    October 2024
 
 
 2.4.  IESG Approval With Expert Review
@@ -196,8 +196,10 @@ Internet-Draft  Registry policies “… with Expert Review”      April 2024
    |  2.  The WG chairs determine whether the conditions for early
    |      allocations described in Section 2 are met, particularly
    |      conditions (c) and (d).  For the registration policies defined
-   |      in Section 2 of RFC-XXXX, the WG chairs first request review
-   |      and approval from the Designated Expert.
+   |      in Section 2 of RFC-XXXX, IANA will ask the Designated
+   |      Expert(s) to approve the early allocation before registration.
+   |      In addition, WG chairs are encouraged to consult the Expert(s)
+   |      early during the early allocation process.
 
 
    // RFC editor: please replace XXXX by the RFC number of this document
@@ -216,15 +218,15 @@ Internet-Draft  Registry policies “… with Expert Review”      April 2024
    This document is all about procedures that need to be implemented by
    IANA, but by itself has no IANA actions.
 
-6.  References
 
 
 
-
-Bormann & Tiloca         Expires 6 October 2024                 [Page 4]
+Bormann & Tiloca          Expires 7 April 2025                  [Page 4]
 
-Internet-Draft  Registry policies “… with Expert Review”      April 2024
+Internet-Draft  Registry policies “… with Expert Review”    October 2024
 
+
+6.  References
 
 6.1.  Normative References
 
@@ -260,27 +262,30 @@ Internet-Draft  Registry policies “… with Expert Review”      April 2024
 
    [IANA.ace] IANA, "Authentication and Authorization for Constrained
               Environments (ACE)",
-              <http://www.iana.org/assignments/ace>.
+              <https://www.iana.org/assignments/ace>.
 
    [IANA.cose]
               IANA, "CBOR Object Signing and Encryption (COSE)",
-              <http://www.iana.org/assignments/cose>.
+              <https://www.iana.org/assignments/cose>.
 
    [IANA.uuid]
-              "*** BROKEN REFERENCE ***".
+              IANA, "UUID", <https://www.iana.org/assignments/uuid>.
+
+
+
+
+
+
+
+Bormann & Tiloca          Expires 7 April 2025                  [Page 5]
+
+Internet-Draft  Registry policies “… with Expert Review”    October 2024
+
 
    [RFC4430]  Sakane, S., Kamada, K., Thomas, M., and J. Vilhuber,
               "Kerberized Internet Negotiation of Keys (KINK)",
               RFC 4430, DOI 10.17487/RFC4430, March 2006,
               <https://www.rfc-editor.org/rfc/rfc4430>.
-
-
-
-
-Bormann & Tiloca         Expires 6 October 2024                 [Page 5]
-
-Internet-Draft  Registry policies “… with Expert Review”      April 2024
-
 
    [RFC5226]  Narten, T. and H. Alvestrand, "Guidelines for Writing an
               IANA Considerations Section in RFCs", RFC 5226,
@@ -322,21 +327,21 @@ Internet-Draft  Registry policies “… with Expert Review”      April 2024
               DOI 10.17487/RFC9203, August 2022,
               <https://www.rfc-editor.org/rfc/rfc9203>.
 
+
+
+
+
+
+
+Bormann & Tiloca          Expires 7 April 2025                  [Page 6]
+
+Internet-Draft  Registry policies “… with Expert Review”    October 2024
+
+
    [RFC9393]  Birkholz, H., Fitzgerald-McKay, J., Schmidt, C., and D.
               Waltermire, "Concise Software Identification Tags",
               RFC 9393, DOI 10.17487/RFC9393, June 2023,
               <https://www.rfc-editor.org/rfc/rfc9393>.
-
-
-
-
-
-
-
-Bormann & Tiloca         Expires 6 October 2024                 [Page 6]
-
-Internet-Draft  Registry policies “… with Expert Review”      April 2024
-
 
    [RFC9528]  Selander, G., Preuß Mattsson, J., and F. Palombini,
               "Ephemeral Diffie-Hellman Over COSE (EDHOC)", RFC 9528,
@@ -381,18 +386,16 @@ A.1.  Related Policy Statements Potentially of Interest
 
    [RFC4430] (written before [RFC5226]) uses this phrasing:
 
+
+
+
+Bormann & Tiloca          Expires 7 April 2025                  [Page 7]
+
+Internet-Draft  Registry policies “… with Expert Review”    October 2024
+
+
    |  *  Assignment from the "RESERVED TO IANA" range needs Standards
    |     Action, or non-standards-track RFCs with Expert Review.
-
-
-
-
-
-
-Bormann & Tiloca         Expires 6 October 2024                 [Page 7]
-
-Internet-Draft  Registry policies “… with Expert Review”      April 2024
-
 
    Somewhat unrelated, [RFC6787] uses the redundant phrase
    "Specification Required with Expert Review".  Section 5 of [RFC5797]
@@ -442,7 +445,4 @@ Authors' Addresses
 
 
 
-
-
-
-Bormann & Tiloca         Expires 6 October 2024                 [Page 8]
+Bormann & Tiloca          Expires 7 April 2025                  [Page 8]
