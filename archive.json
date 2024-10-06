@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-10-03T01:02:29.096938+00:00",
+  "timestamp": "2024-10-06T01:07:10.459872+00:00",
   "repo": "cabo/with-expert-review",
   "labels": [
     {
@@ -55,15 +55,15 @@
       "id": "I_kwDOLpn0z86QcxrJ",
       "title": "Examples of complex \"experting\"",
       "url": "https://github.com/cabo/with-expert-review/issues/1",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "chrysn",
       "authorAssociation": "NONE",
       "assignees": [],
       "labels": [],
       "body": "From today's dispatch discussion, I think this needs examples for where very precise expert input is needed.\r\n\r\nAn example I can provide are CoAP option numbers. There are some simple properties that the expert checks (optional, proxy unsafe, no-cache-key), and those are usually discussed in the course of the document's progress toward the IETF/IESG review. But there is another aspect to it that is about managing scarcity, and the \"0-255\"/\"256-2047\"/... distinction expresses that insufficiently: The real issue is that there are 11 values that are highly efficient in any single situation, and only 1/4th of them has the right bits. Selecting a number and being frugal about it involves understanding which options the new option would typically be used with, which other scenarios could compete with that, on top of considering how those options would be created and processed in sequence.\r\n\r\nIn cases of fixed fields (say, UDP ports), a requester asks for a number and IANA locks it in at some point, or the requester just asks for \"a\" number, and any is assigned \u2013 all choices are good enough. But in the case of CoAP options, selecting a good value requires a lot of understanding that is not even baked into the expert review guidelines (presumably because at that point everyone involved knew how it works anyway, and/or didn't think there would be much need for guidance). IANA is in no position to pick a good number, and without one of the experts (or the CoRE group) involved, I think chances of a good number being picked are slim.",
       "createdAt": "2024-07-22T18:09:34Z",
-      "updatedAt": "2024-07-22T19:31:24Z",
-      "closedAt": null,
+      "updatedAt": "2024-10-04T15:51:48Z",
+      "closedAt": "2024-10-04T15:51:48Z",
       "comments": [
         {
           "author": "cabo",
@@ -71,6 +71,13 @@
           "body": "I think \"correct\" vs. \"good\" is an interesting discussion.\r\nI'm sure many registrants would forgo \"good\" for \"fast registration\".\r\nWe can't make that tradeoff for \"correct\".",
           "createdAt": "2024-07-22T19:31:23Z",
           "updatedAt": "2024-07-22T19:31:23Z"
+        },
+        {
+          "author": "cabo",
+          "authorAssociation": "OWNER",
+          "body": "I wondered whether we should add this information to an appendix of the document.\r\nThat would add significant domain-specific text to the document, which doesn't fit with the general applicability of the proposed new policies.\r\nSo instead I'm adding an editor's note that points to this github issue (including this comment giving the rationale why this information is not added to the document), to be removed by the RFC editor.",
+          "createdAt": "2024-10-04T15:40:17Z",
+          "updatedAt": "2024-10-04T15:40:17Z"
         }
       ]
     },
@@ -79,15 +86,15 @@
       "id": "I_kwDOLpn0z86Yrg_S",
       "title": "Explain \"the three augmented policies\"",
       "url": "https://github.com/cabo/with-expert-review/issues/2",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "marco-tiloca-sics",
       "authorAssociation": "NONE",
       "assignees": [],
       "labels": [],
       "body": "Proposed change to the first bullet point in Section 3:\r\n\r\nOLD:\r\n> * Item (a) in Section 2 of RFC 7120 [BCP100] is extended to include the three augmented policies.\r\n\r\nNEW:\r\n> * Item (a) in Section 2 of RFC 7120 [BCP100] is extended to include the three augmented policies \"RFC Required With Expert Review\", \"IETF Review With Expert Review\", and \"Standards Action With Expert Review\" (see Sections 2.1, 2.2, and 2.3 of the present document, respectively).",
       "createdAt": "2024-10-02T12:47:11Z",
-      "updatedAt": "2024-10-02T12:47:11Z",
-      "closedAt": null,
+      "updatedAt": "2024-10-04T15:33:49Z",
+      "closedAt": "2024-10-04T15:33:49Z",
       "comments": []
     },
     {
@@ -95,15 +102,15 @@
       "id": "I_kwDOLpn0z86Yrmvm",
       "title": "WG Chairs involvement in the Early Allocation process",
       "url": "https://github.com/cabo/with-expert-review/issues/3",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "marco-tiloca-sics",
       "authorAssociation": "NONE",
       "assignees": [],
       "labels": [],
       "body": "In a side discussion with IANA, we agreed on a formulation for documents that mint these hybrid policies and rightly discuss also the case when the Early Allocation process from RFC 7120 is used.\r\n\r\nThat formulation, already used in some Internet Drafts, says:\r\n\r\n> The procedure for early IANA allocation of Standards Track code points defined in [RFC7120] also applies. When such a procedure is used, IANA will ask the designated expert(s) to approve the early allocation before registration. In addition, WG chairs are encouraged to consult the expert(s) early during the process outlined in Section 3.1 of [RFC7120].\r\n\r\nBuilding on that, the text in Section 3 of this document can be revised as below.\r\n\r\nOLD\r\n> 2. The WG chairs determine whether the conditions for early allocations described in Section 2 are met, particularly conditions (c) and (d). For the registration policies defined in Section 2 of RFC-XXXX, the WG chairs first request review and approval from the Designated Expert.\r\n\r\nNEW\r\n> 2. The WG chairs determine whether the conditions for early allocations described in Section 2 are met, particularly conditions (c) and (d). For the registration policies defined in Section 2 of RFC-XXXX, IANA will ask the Designated Expert(s) to approve the early allocation before registration. In addition, WG chairs are encouraged to consult the Expert(s) early during the early allocation process.\r\n",
       "createdAt": "2024-10-02T12:54:51Z",
-      "updatedAt": "2024-10-02T12:54:51Z",
-      "closedAt": null,
+      "updatedAt": "2024-10-04T15:18:39Z",
+      "closedAt": "2024-10-04T15:18:39Z",
       "comments": []
     },
     {
@@ -111,16 +118,24 @@
       "id": "I_kwDOLpn0z86YroJg",
       "title": "Broken reference",
       "url": "https://github.com/cabo/with-expert-review/issues/4",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "marco-tiloca-sics",
       "authorAssociation": "NONE",
       "assignees": [],
       "labels": [],
       "body": "In Section 6.2 \"Informative References\", we have the reference:\r\n\r\n> [IANA.uuid] \"*** BROKEN REFERENCE ***\".\r\n",
       "createdAt": "2024-10-02T12:56:46Z",
-      "updatedAt": "2024-10-02T12:56:46Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2024-10-04T15:11:24Z",
+      "closedAt": "2024-10-04T15:11:24Z",
+      "comments": [
+        {
+          "author": "cabo",
+          "authorAssociation": "OWNER",
+          "body": "Fixed via the fix for https://github.com/ietf-tools/bibxml-service/issues/412\r\n",
+          "createdAt": "2024-10-04T15:11:24Z",
+          "updatedAt": "2024-10-04T15:11:24Z"
+        }
+      ]
     }
   ],
   "pulls": []
