@@ -58,6 +58,12 @@ informative:
 
 [^a4-]: with the necessary process to perform early allocations for registries with one of the augmented policies.
 
+[^a5-]: To support its objectives for the period of time while the
+    above updates haven't been finalized, this document offers text
+    that can be copy-pasted into specifications that want to make use
+    of the augmented policies.
+
+[^a5-]
 
 --- middle
 
@@ -90,12 +96,19 @@ requirements) that would have been pointed out by the expert.
 
 [^a3-] {{Sections 2 and 3 of RFC7120@BCP100}} [^a4-]
 
+[^a5-]
 
 # Augmented Registration Policies {#augment}
 
 For each of the well-known policies defined in {{Sections 4.7, 4.8,
 4.9, and 4.10 of RFC8126@BCP26}}, this document adds a parallel _augmented
 policy_ that also specifies involving a Designated Expert.
+
+As long as his has not happened, authors of specifications that want
+to make use of the augmented registration policies can simply copy the
+pertinent section below, replace "This policy" with "The policy for
+this registry", and copy the result into individual sections that
+establish new registries.
 
 ## RFC Required With Expert Review {#rfcreq}
 
@@ -138,6 +151,8 @@ the registration.
 
 This document updates {{RFC7120@BCP100}} to apply to the augmented policies
 defined above in {{rfcreq}}, {{ietfrev}}, and {{stdsact}}.
+
+(TODO: Explain how a document can specify this before BCP100 has been updated.)
 
 Specifically:
 
