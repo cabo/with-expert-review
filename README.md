@@ -1,5 +1,3 @@
-<!-- regenerate: on (set to off if you edit this file) -->
-
 # Registry policies &#x201C;&#x2026; with Expert Review&#x201D;
 
 This is the working area for the individual Internet-Draft, "Registry policies &#x201C;&#x2026; with Expert Review&#x201D;".
