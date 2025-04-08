@@ -1055,7 +1055,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Bormann &amp; Tiloca</td>
-<td class="center">Expires 8 October 2025</td>
+<td class="center">Expires 10 October 2025</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1071,12 +1071,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <a href="https://www.rfc-editor.org/rfc/rfc7120" class="eref">7120</a>, <a href="https://www.rfc-editor.org/rfc/rfc8126" class="eref">8126</a> (if approved)</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2025-04-06" class="published">6 April 2025</time>
+<time datetime="2025-04-08" class="published">8 April 2025</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Best Current Practice</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2025-10-08">8 October 2025</time></dd>
+<dd class="expires"><time datetime="2025-10-10">10 October 2025</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1134,7 +1134,7 @@ of the augmented policies.<a href="#section-abstract-3" class="pilcrow">¶</a></
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 8 October 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 10 October 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1260,10 +1260,11 @@ of the augmented policies.<a href="#section-1-5" class="pilcrow">¶</a></p>
       </h2>
 <p id="section-2-1">For each of the well-known policies defined in Sections <a href="https://rfc-editor.org/rfc/rfc8126#section-4.7" class="relref">4.7</a>, <a href="https://rfc-editor.org/rfc/rfc8126#section-4.8" class="relref">4.8</a>, <a href="https://rfc-editor.org/rfc/rfc8126#section-4.9" class="relref">4.9</a>, and <a href="https://rfc-editor.org/rfc/rfc8126#section-4.10" class="relref">4.10</a> of RFC 8126 <span>[<a href="#BCP26" class="cite xref">BCP26</a>]</span>, this document adds a parallel <em>augmented
 policy</em> that also specifies involving a Designated Expert.<a href="#section-2-1" class="pilcrow">¶</a></p>
-<p id="section-2-2">As long as his has not happened, authors of specifications that want
-to make use of the augmented registration policies can simply copy the
+<p id="section-2-2">For the period of time while <span>[<a href="#BCP26" class="cite xref">BCP26</a>]</span> has not been updated to include
+the augmented registration policies, authors of specifications that want
+to make use of these can simply copy the
 pertinent section below, replace "This policy" with "The policy for
-this registry", and copy the result into individual sections that
+this registry", and use the result in the individual sections that
 establish new registries.<a href="#section-2-2" class="pilcrow">¶</a></p>
 <div id="rfcreq">
 <section id="section-2.1">
@@ -1324,35 +1325,39 @@ the registration.<a href="#section-2.4-1" class="pilcrow">¶</a></p>
       </h2>
 <p id="section-3-1">This document updates RFC 7120 <span>[<a href="#BCP100" class="cite xref">BCP100</a>]</span> to apply to the augmented policies
 defined above in <a href="#rfcreq" class="auto internal xref">Section 2.1</a>, <a href="#ietfrev" class="auto internal xref">Section 2.2</a>, and <a href="#stdsact" class="auto internal xref">Section 2.3</a>.<a href="#section-3-1" class="pilcrow">¶</a></p>
-<p id="section-3-2">(TODO: Explain how a document can specify this before BCP100 has been updated.)<a href="#section-3-2" class="pilcrow">¶</a></p>
-<p id="section-3-3">Specifically:<a href="#section-3-3" class="pilcrow">¶</a></p>
+<p id="section-3-2">For the period of time while <span>[<a href="#BCP100" class="cite xref">BCP100</a>]</span> has not been updated in this respect,
+authors of specifications can use text that builds on <span><a href="https://rfc-editor.org/rfc/rfc9668#section-8.3" class="relref">Section 8.3</a> of [<a href="#RFC9668" class="cite xref">RFC9668</a>]</span>, in a section that establishes a new registry using one of the augmented registration policies:<a href="#section-3-2" class="pilcrow">¶</a></p>
+<blockquote id="section-3-3">
+        <p id="section-3-3.1">[...] The procedure for early IANA allocation of "standards track code points" defined in [<a href="#RFC7120" class="auto internal xref">RFC7120</a>] also applies. When such a procedure is used, IANA will ask the designated expert(s) to approve the early allocation before registration. In addition, working group chairs are encouraged to consult the expert(s) early during the process outlined in <span><a href="https://rfc-editor.org/rfc/rfc7120#section-3.1" class="relref">Section 3.1</a> of [<a href="#RFC7120" class="cite xref">RFC7120</a>]</span>.<a href="#section-3-3.1" class="pilcrow">¶</a></p>
+</blockquote>
+<p id="section-3-4">Specifically:<a href="#section-3-4" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-3-4.1">
-          <p id="section-3-4.1.1">Item (a) in Section <a href="https://rfc-editor.org/rfc/rfc7120#section-2" class="relref">2</a> of RFC 7120 <span>[<a href="#BCP100" class="cite xref">BCP100</a>]</span> is extended to include the
+<li class="normal" id="section-3-5.1">
+          <p id="section-3-5.1.1">Item (a) in Section <a href="https://rfc-editor.org/rfc/rfc7120#section-2" class="relref">2</a> of RFC 7120 <span>[<a href="#BCP100" class="cite xref">BCP100</a>]</span> is extended to include the
 three augmented policies "<a href="#rfcreq" class="internal xref">RFC Required With Expert Review</a>", "<a href="#ietfrev" class="internal xref">IETF Review With Expert Review</a>", and "<a href="#stdsact" class="internal xref">Standards Action With Expert Review</a>"
 (see Sections <a href="#rfcreq" class="auto internal xref">2.1</a>, <a href="#ietfrev" class="auto internal xref">2.2</a>, and <a href="#stdsact" class="auto internal xref">2.3</a>
-of the present document, respectively).<a href="#section-3-4.1.1" class="pilcrow">¶</a></p>
+of the present document, respectively).<a href="#section-3-5.1.1" class="pilcrow">¶</a></p>
 </li>
-        <li class="normal" id="section-3-4.2">
-          <p id="section-3-4.2.1">Item (2) in Section <a href="https://rfc-editor.org/rfc/rfc7120#section-3.1" class="relref">3.1</a> of RFC 7120 <span>[<a href="#BCP100" class="cite xref">BCP100</a>]</span> is amended as follows:<a href="#section-3-4.2.1" class="pilcrow">¶</a></p>
+        <li class="normal" id="section-3-5.2">
+          <p id="section-3-5.2.1">Item (2) in Section <a href="https://rfc-editor.org/rfc/rfc7120#section-3.1" class="relref">3.1</a> of RFC 7120 <span>[<a href="#BCP100" class="cite xref">BCP100</a>]</span> is amended as follows:<a href="#section-3-5.2.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
-<blockquote id="section-3-5">
-        <ol start="2" type="1" class="normal type-1" id="section-3-5.1">
-<li id="section-3-5.1.1">
-            <p id="section-3-5.1.1.1">The WG chairs determine whether the conditions for early
+<blockquote id="section-3-6">
+        <ol start="2" type="1" class="normal type-1" id="section-3-6.1">
+<li id="section-3-6.1.1">
+            <p id="section-3-6.1.1.1">The WG chairs determine whether the conditions for early
 allocations described in Section 2 are met, particularly
 conditions (c) and (d).
 For the registration policies defined in <a href="#augment" class="auto internal xref">Section 2</a> of
 RFC-XXXX, IANA will ask the Designated Expert(s) to approve the
 early allocation before registration.
 In addition, WG chairs are encouraged to consult the Expert(s)
-early during the early allocation process.<a href="#section-3-5.1.1.1" class="pilcrow">¶</a></p>
+early during the early allocation process.<a href="#section-3-6.1.1.1" class="pilcrow">¶</a></p>
 </li>
         </ol>
 </blockquote>
-<p id="section-3-6"><span class="cref" id="XXXX">RFC editor: please replace XXXX by the RFC number of this
-document and delete this note.</span><a href="#section-3-6" class="pilcrow">¶</a></p>
+<p id="section-3-7"><span class="cref" id="XXXX">RFC editor: please replace XXXX by the RFC number of this
+document and delete this note.</span><a href="#section-3-7" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="security-considerations">
@@ -1404,8 +1409,12 @@ IANA, but by itself has no IANA actions.<a href="#section-5-1" class="pilcrow">�
 </dd>
 <dd class="break"></dd>
 <dt id="RFC8729">[RFC8729]</dt>
-      <dd>
+        <dd>
 <span class="refAuthor">Housley, R., Ed.</span> and <span class="refAuthor">L. Daigle, Ed.</span>, <span class="refTitle">"The RFC Series and RFC Editor"</span>, <span class="seriesInfo">RFC 8729</span>, <span class="seriesInfo">DOI 10.17487/RFC8729</span>, <time datetime="2020-02" class="refDate">February 2020</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8729">https://www.rfc-editor.org/rfc/rfc8729</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC9668">[RFC9668]</dt>
+      <dd>
+<span class="refAuthor">Palombini, F.</span>, <span class="refAuthor">Tiloca, M.</span>, <span class="refAuthor">Höglund, R.</span>, <span class="refAuthor">Hristozov, S.</span>, and <span class="refAuthor">G. Selander</span>, <span class="refTitle">"Using Ephemeral Diffie-Hellman Over COSE (EDHOC) with the Constrained Application Protocol (CoAP) and Object Security for Constrained RESTful Environments (OSCORE)"</span>, <span class="seriesInfo">RFC 9668</span>, <span class="seriesInfo">DOI 10.17487/RFC9668</span>, <time datetime="2024-11" class="refDate">November 2024</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc9668">https://www.rfc-editor.org/rfc/rfc9668</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 </dl>
 </section>
