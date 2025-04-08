@@ -104,10 +104,11 @@ For each of the well-known policies defined in {{Sections 4.7, 4.8,
 4.9, and 4.10 of RFC8126@BCP26}}, this document adds a parallel _augmented
 policy_ that also specifies involving a Designated Expert.
 
-As long as his has not happened, authors of specifications that want
-to make use of the augmented registration policies can simply copy the
+For the period of time while {{BCP26}} has not been updated to include
+the augmented registration policies, authors of specifications that want
+to make use of these can simply copy the
 pertinent section below, replace "This policy" with "The policy for
-this registry", and copy the result into individual sections that
+this registry", and use the result in the individual sections that
 establish new registries.
 
 ## RFC Required With Expert Review {#rfcreq}
@@ -152,7 +153,11 @@ the registration.
 This document updates {{RFC7120@BCP100}} to apply to the augmented policies
 defined above in {{rfcreq}}, {{ietfrev}}, and {{stdsact}}.
 
-(TODO: Explain how a document can specify this before BCP100 has been updated.)
+For the period of time while {{BCP100}} has not been updated in this respect,
+authors of specifications can use text that builds on {{Section 8.3 of !RFC9668}}, in a section that establishes a new registry using one of the augmented registration policies:
+
+{:quote}
+> [...] The procedure for early IANA allocation of "standards track code points" defined in \[{{RFC7120}}] also applies. When such a procedure is used, IANA will ask the designated expert(s) to approve the early allocation before registration. In addition, working group chairs are encouraged to consult the expert(s) early during the process outlined in {{Section 3.1 of RFC7120}}.
 
 Specifically:
 
