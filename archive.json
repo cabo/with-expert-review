@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-01-30T01:00:45.020705+00:00",
+  "timestamp": "2025-04-10T01:55:56.742205+00:00",
   "repo": "cabo/with-expert-review",
   "labels": [
     {
@@ -138,5 +138,95 @@
       ]
     }
   ],
-  "pulls": []
+  "pulls": [
+    {
+      "number": 5,
+      "id": "PR_kwDOLpn0z86RixR8",
+      "title": "Add information for copy-paste for use while waiting for ianabis.",
+      "url": "https://github.com/cabo/with-expert-review/pull/5",
+      "state": "MERGED",
+      "author": "cabo",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2025-04-06T19:18:41Z",
+      "updatedAt": "2025-04-08T21:36:10Z",
+      "baseRepository": "cabo/with-expert-review",
+      "baseRefName": "main",
+      "baseRefOid": "f7990cbe047f32b41812a7ba773147b67e2eda87",
+      "headRepository": "cabo/with-expert-review",
+      "headRefName": "copy-paste",
+      "headRefOid": "ad5344e73275030dfb934debfd5a9d67a1ae91bd",
+      "closedAt": "2025-04-08T21:36:10Z",
+      "mergedAt": "2025-04-08T21:36:10Z",
+      "mergedBy": "cabo",
+      "mergeCommit": {
+        "oid": "c33f249224d79bca4f87e7bf706aed11d7e2fcea"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOLpn0z86jqUkc",
+          "commit": {
+            "abbreviatedOid": "cd802ce"
+          },
+          "author": "marco-tiloca-sics",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-04-07T07:31:33Z",
+          "updatedAt": "2025-04-07T07:31:33Z",
+          "comments": [
+            {
+              "originalPosition": 25,
+              "body": "OLD:\r\nAs long as his has not happened, authors ...\r\n\r\nNEW:\r\nFor the period of time while {{RFC8126@BCP26}} has not been updated to include the augmented registration policies, authors ...",
+              "createdAt": "2025-04-07T07:31:33Z",
+              "updatedAt": "2025-04-07T07:31:33Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOLpn0z86jqU1f",
+          "commit": {
+            "abbreviatedOid": "cd802ce"
+          },
+          "author": "marco-tiloca-sics",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-04-07T07:31:59Z",
+          "updatedAt": "2025-04-07T07:31:59Z",
+          "comments": [
+            {
+              "originalPosition": 28,
+              "body": "s/and copy the/and use the",
+              "createdAt": "2025-04-07T07:31:59Z",
+              "updatedAt": "2025-04-07T07:31:59Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOLpn0z86jqfaW",
+          "commit": {
+            "abbreviatedOid": "cd802ce"
+          },
+          "author": "marco-tiloca-sics",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2025-04-07T07:47:39Z",
+          "updatedAt": "2025-04-07T07:47:40Z",
+          "comments": [
+            {
+              "originalPosition": 39,
+              "body": "Just a proposal: for the period of time while BCP 100 is not updated in this respect, authors of specifications can use text that builds on [1], in a section that establishes a new registry using one of the augmented registration policies.\r\n\r\n> The procedure for early IANA allocation of \"standards track code points\" defined in [RFC7120] also applies. When such a procedure is used, IANA will ask the designated expert(s) to approve the early allocation before registration. In addition, working group chairs are encouraged to consult the expert(s) early during the process outlined in Section 3.1 of [RFC7120].\r\n\r\n[1] https://www.ietf.org/rfc/rfc9668.html#section-8.3",
+              "createdAt": "2025-04-07T07:47:39Z",
+              "updatedAt": "2025-04-07T07:47:40Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
