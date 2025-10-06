@@ -44,7 +44,8 @@ normative:
   RFC8729: bodies
 
 informative:
-
+  I-D.baber-ianabis-rfc8126bis: 8126bis
+  I-D.baber-ianabis-rfc7120bis: 7120bis
 
 --- abstract
 
@@ -64,6 +65,26 @@ informative:
     of the augmented policies.
 
 [^a5-]
+
+
+[^ed-note]
+
+[^ed-note]: —— Editors' note: ——\\
+    As to augmenting existing policies, the provided proposals have
+    been considered in {{-8126bis}} within the IANABIS Working Group.\\
+    This topic is covered by {{augment}} of our draft and there is a
+    placeholder "ADD NEW PROCEDURE" about it at {{Section 4 of
+    -8126bis}}.
+    However, compared to our draft, this is not augmenting the policy
+    "IESG Approval".\\
+    On the topic of early registration covered by {{early}} of our
+    draft, we were under the impression that something similar could
+    be argued about it too, but not quite (yet).\\
+    Looking at {{-7120bis}}, there seems to be no text or placeholders
+    on that topic yet.
+    We expect such text to come in the future, to ensure that the
+    early allocation procedure is fully specified also for registries
+    that use the augmented policies.
 
 --- middle
 
@@ -148,7 +169,7 @@ the registration by the Designated Expert is obtained before approving
 the registration.
 
 
-# Early Allocation for Augmented Registration Policies
+# Early Allocation for Augmented Registration Policies {#early}
 
 This document updates {{RFC7120@BCP100}} to apply to the augmented policies
 defined above in {{rfcreq}}, {{ietfrev}}, and {{stdsact}}.
