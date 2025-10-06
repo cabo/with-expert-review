@@ -228,10 +228,11 @@ Examples for RFCs and registries created from them
 that use "Standards Action with Expert Review", without further
 explanation of this usage, include:
 
-* {{?IANA.uuid}}, interpreting {{?RFC9562}}
-* {{?IANA.cose}}, interpreting {{Section 11 of ?RFC9052}} in conjunction
-  with the older {{Section 16 of ?RFC8152}}
-* {{?IANA.ace}}, interpreting {{Section 9 of ?RFC9203}}
+* {{uuid-subtypes (UUID Subtypes registry)<IANA.uuid}} of {{?IANA.uuid}},
+  interpreting {{Section 7.1 of ?RFC9562}}
+* Several registries of {{?IANA.cose}}, interpreting {{Section 11 of
+  ?RFC9052}} in conjunction with the older {{Section 16 of ?RFC8152}}
+* Several registries of {{?IANA.ace}}, interpreting {{Section 9 of ?RFC9203}}
 * {{Section 6 of ?RFC9393}}
 * {{Section 10 of ?RFC9528}}
 
