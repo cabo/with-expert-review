@@ -44,7 +44,8 @@ normative:
   RFC8729: bodies
 
 informative:
-
+  I-D.baber-ianabis-rfc8126bis: 8126bis
+  I-D.baber-ianabis-rfc7120bis: 7120bis
 
 --- abstract
 
@@ -59,11 +60,31 @@ informative:
 [^a4-]: with the necessary process to perform early allocations for registries with one of the augmented policies.
 
 [^a5-]: To support its objectives for the period of time while the
-    above updates haven't been finalized, this document offers text
+    above updates have not yet been finalized, this document offers text
     that can be copy-pasted into specifications that want to make use
     of the augmented policies.
 
 [^a5-]
+
+
+[^ed-note]
+
+[^ed-note]: —— Editors' note: ——\\
+    As to augmenting existing policies, the provided proposals have
+    been considered in {{-8126bis}} within the IANABIS Working Group.\\
+    This topic is covered by {{augment}} of our draft and there is a
+    placeholder "ADD NEW PROCEDURE" about it at {{Section 4 of
+    -8126bis}}.
+    However, compared to our draft, this is not augmenting the policy
+    "IESG Approval".\\
+    On the topic of early registration covered by {{early}} of our
+    draft, we were under the impression that something similar could
+    be argued about it too, but not quite (yet).\\
+    Looking at {{-7120bis}}, there seems to be no text or placeholders
+    on that topic yet.
+    We expect such text to come in the future, to ensure that the
+    early allocation procedure is fully specified also for registries
+    that use the augmented policies.
 
 --- middle
 
@@ -148,7 +169,7 @@ the registration by the Designated Expert is obtained before approving
 the registration.
 
 
-# Early Allocation for Augmented Registration Policies
+# Early Allocation for Augmented Registration Policies {#early}
 
 This document updates {{RFC7120@BCP100}} to apply to the augmented policies
 defined above in {{rfcreq}}, {{ietfrev}}, and {{stdsact}}.
@@ -203,16 +224,17 @@ IANA, but by itself has no IANA actions.
 
 This appendix is informative.
 
-Examples for RFCs (and one RFC-to-be) and registries created from them
+Examples for RFCs and registries created from them
 that use "Standards Action with Expert Review", without further
 explanation of this usage, include:
 
-* {{?IANA.uuid}}, interpreting the approved {{?I-D.ietf-uuidrev-rfc4122bis-14}}
-* {{?IANA.cose}}, interpreting {{Section 11 of ?RFC9052}} in conjunction
-  with the older {{Section 16 of ?RFC8152}}
-* {{?IANA.ace}}, interpreting {{Section 9 of ?RFC9203}}
+* Several registries of {{?IANA.cose}}, interpreting {{Section 11 of
+  ?RFC9052}} in conjunction with the older {{Section 16 of ?RFC8152}}
+* Several registries of {{?IANA.ace}}, interpreting {{Section 9 of ?RFC9203}}
 * {{Section 6 of ?RFC9393}}
 * {{Section 10 of ?RFC9528}}
+* {{uuid-subtypes (UUID Subtypes registry)<IANA.uuid}} of {{?IANA.uuid}},
+  interpreting {{Section 7.1 of ?RFC9562}}
 
 ## Related Policy Statements Potentially of Interest
 
