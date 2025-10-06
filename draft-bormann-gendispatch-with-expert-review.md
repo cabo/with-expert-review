@@ -203,11 +203,11 @@ IANA, but by itself has no IANA actions.
 
 This appendix is informative.
 
-Examples for RFCs (and one RFC-to-be) and registries created from them
+Examples for RFCs and registries created from them
 that use "Standards Action with Expert Review", without further
 explanation of this usage, include:
 
-* {{?IANA.uuid}}, interpreting the approved {{?I-D.ietf-uuidrev-rfc4122bis-14}}
+* {{?IANA.uuid}}, interpreting {{?RFC9562}}
 * {{?IANA.cose}}, interpreting {{Section 11 of ?RFC9052}} in conjunction
   with the older {{Section 16 of ?RFC8152}}
 * {{?IANA.ace}}, interpreting {{Section 9 of ?RFC9203}}
