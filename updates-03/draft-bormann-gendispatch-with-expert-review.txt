@@ -433,15 +433,15 @@ Appendix A.  Usage in Existing Specifications
    "Standards Action with Expert Review", without further explanation of
    this usage, include:
 
-   *  [IANA.uuid], interpreting [RFC9562]
+   *  Several registries of [IANA.cose], interpreting Section 11 of
+      [RFC9052] in conjunction with the older Section 16 of [RFC8152]
 
-   *  [IANA.cose], interpreting Section 11 of [RFC9052] in conjunction
-      with the older Section 16 of [RFC8152]
-
-   *  [IANA.ace], interpreting Section 9 of [RFC9203]
+   *  Several registries of [IANA.ace], interpreting Section 9 of
+      [RFC9203]
 
    *  Section 6 of [RFC9393]
 
+   *  Section 10 of [RFC9528]
 
 
 
@@ -450,7 +450,8 @@ Bormann & Tiloca          Expires 9 April 2026                  [Page 8]
 Internet-Draft  Registry policies “… with Expert Review”    October 2025
 
 
-   *  Section 10 of [RFC9528]
+   *  UUID Subtypes registry of [IANA.uuid], interpreting Section 7.1 of
+      [RFC9562]
 
 A.1.  Related Policy Statements Potentially of Interest
 
@@ -493,7 +494,6 @@ Authors' Addresses
    Germany
    Phone: +49-421-218-63921
    Email: cabo@tzi.org
-
 
 
 
