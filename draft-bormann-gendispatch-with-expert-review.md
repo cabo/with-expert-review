@@ -59,7 +59,7 @@ informative:
 [^a4-]: with the necessary process to perform early allocations for registries with one of the augmented policies.
 
 [^a5-]: To support its objectives for the period of time while the
-    above updates haven't been finalized, this document offers text
+    above updates have not yet been finalized, this document offers text
     that can be copy-pasted into specifications that want to make use
     of the augmented policies.
 
